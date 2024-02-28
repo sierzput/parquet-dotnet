@@ -59,7 +59,7 @@ namespace Parquet.Test.Integration {
 
             //F.Copy(fileName, "c:\\tmp\\pyarrow.parquet", true);
 
-            // read with Java
+            // read with Python
             string? arrowCat = ExecPyArrowToJson(fileName);
             Assert.NotNull(arrowCat);
             Assert.Contains("id", arrowCat);
